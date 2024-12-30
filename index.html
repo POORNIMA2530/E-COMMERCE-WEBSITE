@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish E-Commerce</title>
+    <link rel="stylesheet" href="styles.css6">
+	<style>
+	* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+marquee
+{
+FONT-SIZE:20PX;
+FONT-FAMILY:ARIAL;
+COLOR:PURPLE;
+MARGIN:5PX;
+}
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Hero Section */
+.hero {
+    background: url('coverpage.png') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e85d4f;
+}
+
+/* Products Section */
+.products {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 1.6rem;
+    margin-top: 15px;
+}
+
+.product-card p {
+    color: #555;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #e85d4f;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* About Us Section */
+.about {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+	
+	
+	
+	
+	</style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="#">E-Shop</a>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+	<marquee direction="right" behavior="alteranate" loop="3">HAPPY HOLIDAY SALE!1 BUY GET TO 2 FREE </marquee>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to E-Shop</h1>
+            <p>Discover the best deals on your favorite products</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Featured Products -->
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="HAIR 1.png" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$29.99</p>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="HAIR2.png" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$49.99</p>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="T-shirt1.png" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$19.99</p>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At E-Shop, we offer the best online shopping experience with a wide variety of high-quality products at unbeatable prices. Our mission is to bring great products to your doorstep at affordable prices.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+		<p>stay connected</p>
+		<p>with instagram ,facebook</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 E-Shop. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
